@@ -1,0 +1,108 @@
+/* Set full-screen background video */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000; /* Fallback background color */
+  }
+  
+  video#backgroundVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+  
+  /* Container for all content */
+  .container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    backdrop-filter: blur(5px); /* Blurring effect to blend with the video */
+  }
+  
+  /* Title Styling */
+  .title {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ffeb3b;
+  }
+  
+  /* Input and Button section styling */
+  .input-section {
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    padding: 15px;
+    font-size: 1.1em;
+    border: 2px solid #ffeb3b;
+    border-radius: 10px;
+    width: 80%;
+    transition: transform 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent input */
+    color: white;
+  }
+  
+  .button {
+    padding: 15px 20px;
+    font-size: 1.1em;
+    margin-top: 10px;
+    border: none;
+    background-color: #ffeb3b;
+    color: #333;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #ffc107;
+    transform: scale(1.1);
+  }
+  
+  .input-field:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Weather display section */
+  .weather-display {
+    font-size: 1.2em;
+    line-height: 1.5;
+    background-color: rgba(255, 235, 59, 0.2); /* Transparent yellow background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 235, 59, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .weather-display:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(255, 235, 59, 0.6);
+  }
+  
+  /* Weather Icon Styling */
+  .weather-icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather 360</title>
+  <link rel="stylesheet" href="styles2.css">
+  
+  <!-- jQuery UI for Autocomplete -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+  <!-- Background Video -->
+  <video id="backgroundVideo" autoplay muted loop>
+    <source src="4k Storm for Live Wallpaper.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Main Content Container -->
+  <div class="container">
+    <h1 class="title">Weather 360</h1>
+
+    <!-- Input for changing location -->
+    <div class="input-section">
+      <input type="text" id="cityInput" class="input-field" placeholder="Enter city name" />
+      <button onclick="getWeatherByCity()" class="button">Get Weather</button>
+    </div>
+
+    <!-- Weather display section -->
+    <div id="result" class="weather-display">
+      <h2>Weather in <span id="locationName">Loading...</span></h2>
+      <p>
+         
+        <img src="icons/temperature-icon.png" class="icon"> Temperature: <span id="temperature">--</span>°C
+      </p>
+      <p>
+        <img src="icons/weather-icon.png" class="icon"> Weather: <span id="weatherDescription">--</span>
+      </p>
+      <p>
+        <img src="icons/humidity-icon.png" class="icon"> Humidity: <span id="humidity">--</span>%
+      </p>
+      <p>
+        <img src="icons/wind-icon.png" class="icon"> Wind Speed: <span id="windSpeed">--</span> m/s
+      </p>
+    </div>
+  </div>
+
+  <!-- jQuery and jQuery UI for autocomplete -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  <!-- Weather Script -->
+  <script src="script2.js"></script>
+</body>
+</html>
